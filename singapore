@@ -1,0 +1,7 @@
+#/bin/bash
+systemctl status rsyslog
+if [ $? -eq 0 ];then
+echo "rsyslog running"
+else
+echo "rsyslog not running"
+fi
